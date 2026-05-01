@@ -28,7 +28,7 @@ Everything runs locally. Nothing leaves your machine.
 
 ---
 
-![Burner Wallet Architecture](./assets/burner-wallet-architecture.svg)
+![Burner Wallet Architecture](./assets/burner_wallet_architecture.svg)
 
 
 ## 💼 Why this exists
