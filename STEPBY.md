@@ -99,3 +99,13 @@ One wallet per purpose. One exposure per failure point.
 | Never reuse a burner across projects | Cross-contamination of exposure |
 | Mnemonic offline only | Cloud = third party = risk |
 | Generate offline for large amounts | No network = no interception |
+
+Son wallets reales y funcionales desde el momento en que las generas.
+La EVM (0x...) — puedes usarla en BSC, Ethereum, Polygon, cualquier red EVM. Para meter fondos simplemente envías BNB/ETH/tokens a esa dirección. Para verla en BSC: bscscan.com y buscas la address.
+La Bitcoin (bc1q...) — wallet SegWit real de Bitcoin. Para usarla importa la Private Key (WIF) en BlueWallet o Trust Wallet y ya aparece como una wallet tuya. Puedes recibir BTC directamente en esa dirección.
+Lo que tienes que hacer ahora:
+
+La EVM → mete la private key en el .env del Bot 14 y quita la de MetaMask
+La Bitcoin → importa la WIF en BlueWallet/Trust Wallet para poder ver el saldo y mover fondos
+
+Y recuerda — si no guardaste la mnemonic/WIF en papel ya, hazlo ahora antes de cerrar el terminal o cualquier sitio donde la tengas copiada.

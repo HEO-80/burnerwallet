@@ -62,12 +62,13 @@ If it gets exposed — you lose the operating capital, not your savings.
 ---
 
 ## 🗂️ Structure
+```
 burnerwallet/
-├── generate-evm.js       # EVM wallet — BSC, Ethereum, Polygon
-├── generate-btc.js       # Bitcoin wallet — SegWit native
-├── .gitignore            # Excludes node_modules and any key output
+├── generate-evm.js
+├── generate-btc.js
+├── .gitignore
 └── README.md
-
+```
 ---
 
 ## ⚙️ Setup
@@ -147,7 +148,53 @@ SegWit addresses (`bc1q...`) have lower transaction fees than legacy formats.
 
 Neither script transmits anything. Output stays in your terminal.
 
+
 ---
+
+## ⚠️ Read this before you close the terminal
+
+Both wallets are real and functional the moment you generate them.
+
+**EVM wallet (`0x...`)** — works on BSC, Ethereum, Polygon and any EVM-compatible network.
+Send BNB, ETH or tokens directly to that address.
+Check your balance anytime at [bscscan.com](https://bscscan.com).
+
+**Bitcoin wallet (`bc1q...`)** — a real SegWit Bitcoin wallet.
+Import the `Private Key (WIF)` into BlueWallet or Trust Wallet and it appears as a fully functional wallet.
+You can receive BTC at that address immediately.
+
+**What to do right now:**
+EVM     →  paste the private key into your bot's .env — remove the MetaMask one
+Bitcoin →  import the WIF into BlueWallet or Trust Wallet
+Both    →  write down the mnemonic / WIF before closing the terminal
+
+---
+
+## 🔑 Where to store your keys
+
+Bitwarden works well for this. Far better than a plain text file on your desktop.
+
+Store this for every wallet you generate:
+Name:        Burner EVM - Bot14 - May 2026
+Address:     0xAbc123...
+Private Key: 0x4f3c...
+Mnemonic:    word1 word2 word3 ... word12
+Network:     BSC
+Purpose:     Bot 14 SniperBot V2
+
+Physical backup still matters — Bitwarden is an online service.
+If you lose access to your account, if they shut down, if your email gets hacked — digital backups are gone.
+Paper does not depend on anyone.
+
+| Storage | Use case |
+|---------|----------|
+| Bitwarden | Day-to-day quick access |
+| Paper / steel plate | Backup when everything digital fails |
+
+> For bot wallets with small capital (0.01–0.05 BNB), Bitwarden alone is enough.
+> For serious amounts — paper backup is mandatory, no exceptions.
+---
+
 
 ## 🧰 Tech Stack
 
