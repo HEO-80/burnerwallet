@@ -28,6 +28,9 @@ Everything runs locally. Nothing leaves your machine.
 
 ---
 
+![Burner Wallet Architecture](./assets/burner-wallet-architecture.svg)
+
+
 ## 💼 Why this exists
 
 When you run trading bots on-chain, your private key lives in a `.env` file.
